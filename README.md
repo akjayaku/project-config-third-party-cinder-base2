@@ -1,0 +1,1 @@
+# project-config-third-party-cinder-base
