@@ -1,0 +1,18 @@
+- hosts: localhost
+  roles:
+    - role: add-fileserver
+      fileserver: "{{ site_logs }}"
+    - role: ara-report
+
+- hosts: "{{ site_logs.fqdn }}"
+  gather_facts: False
+  roles:
+    - role: upload-logs
+      zuul_log_url: "{{ logs_base_url }}"
+
+- hosts: all
+  roles:
+    - role: add-authorized-keys
+      public_keys:
+        - public_key: "{{ debug_public_key }}"
+      when: not zuul_success | bool
