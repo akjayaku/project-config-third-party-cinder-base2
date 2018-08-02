@@ -15,5 +15,6 @@
     vars:
       logs_base_url: "http://173.39.89.136/logs"
       debug_public_key: |
+        ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDYvFMK4GhJW0MY4rFQ0CXXASXHUNSlkhUR9RjjO7Afij7edNIcmTU4wGuU5FjgiekdXXRhEUAjy/RJnBveq2Wss52Pk0FWn+E1+/pML6yx2Wb5o0Lb0oDdanySx8MIdjUBNSAtZPQjaNzgRSkUFBEBDD1tm6E2x34X6PIxBP3VjF9eqyV9AjUMD++Yc19RG9Vq4iXkWc1du8KE4T90pYzZ6SWQQlAYodOkLinUKtchZGT2D/FQRgn/3EE3Ad3DGJ9ZllamW5PMZ9vJDVdWrnj8WlZZcRPoH4FBujZ65Ebwo4o5AQGZ7y8KOsNbgX08A56+HqMZV/dEIVBUKxzos5Fv zuuluser@cinder-zuulv3
     secrets:
       - site_logs
