@@ -2,4 +2,4 @@
     name: openstack/cinder
     check:
       jobs:
-        - job
+        - dsvm-tempest-cisco-zonemanager-job
